@@ -3,13 +3,16 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Calisse, Portland, Music Band">
+	<meta name="description" content="Câlisse, Calisse, Portland, Music Band">
 	
 	<title>Câlisse</title>
 
 	<link rel="shortcut icon" href="images/gt_favicon.png">
-	<!-- Bootstrap itself -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="css/magister.css">
@@ -20,26 +23,77 @@
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600,700' rel='stylesheet' type='text/css'>
 	</head>
 
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
 	<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
 	<body class="theme-invert">
 
-		<!-- Main (Home) section -->
-		<section class="section" id="head">
+		<section id="head">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-lg-10 col-md-offset-2 col-lg-offset-1 text-center">	
-						<!-- Site Title, your name, HELLO msg, etc. -->
 
-						   <img class="img-responsive tocenter" src="images/calisse_splash.png" alt="calisse" height="335" width="800"> 
+						<div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#main-carousel" data-slide-to="1"></li>
+								<li data-target="#main-carousel" data-slide-to="2"></li>
+								<li data-target="#main-carousel" data-slide-to="3"></li>
+								<li data-target="#main-carousel" data-slide-to="4"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/calisse_splash_carousel.png" alt="Câlisse Live">
+									<!--
+									<div class="carousel-caption">
+										<h3><a href="https://calisse.bandcamp.com">"Farewell, Black Sheep" available for preorder</a></h3>
+									</div>
+									-->
+								</div>
+
+								<div class="item">
+									<img src="images/backyard.jpg" alt="Câlisse at Home">
+									<div class="carousel-caption">
+										<h3>If "Stay" is any indication of what we're to expect from "Farewell Black Sheep," then April can't get here soon enough.</h3>
+										<p>Joshua Pickard @ Nooga.com</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="images/dantes_2015.jpg" alt="Câlisse at Dante's">
+									<div class="carousel-caption">
+										<h3>Wildly inventive stuff that's light years beyond the scope of the average listener</h3>
+										<p>Babysue</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="images/bridge_photo_shoot.jpg" alt="Câlisse">
+									<div class="carousel-caption">
+										<h3>... it's a crazy, fun-filled 23 minutes of indie rock bliss.</h3>
+										<p>Marc Phillips @ The Vinyl Anachronist </p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="images/album_cover.png" alt="Farewell Black Sheep">
+									<div class="carousel-caption">
+										<h3><a href="https://calisse.bandcamp.com">Available for preorder now</a></h3>
+									</div>
+								</div>
+							</div>
+
+						</div>
+							<p/>
+							<p><iframe width="560" height="315" src="https://www.youtube.com/embed/5t8NOqPQ7Zw" frameborder="0" allowfullscreen></iframe></p>
+
 							<h4 class="tagline title">
-								<p><a class="http://kellysolympian.com/">Single Launch - "Stay" - March 5th at Kelly's Olympian</a></p>
-								<!--<p></p><a class="">New Album - "Farewell Black Sheep" available for preorder soon</a></p>-->
+								<p><a href="https://calisse.bandcamp.com">New Album - "Farewell, Black Sheep" available for preorder now!</a></p>
 							</h4>
-							<p><iframe frameborder="no" height="80" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241703765%3Fsecret_token%3Ds-MCzKK&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="50%"></iframe></p>
-							<blockquote>
-								If "Stay" is any indication of what we're to expect from "Farewell Black Sheep," then April can't get here soon enough.<br/>
-								- <a href="http://nooga.com/172122/notes-from-left-of-the-dial-calisse-and-more/">Joshua Pickard @ Nooga.com</a> 
-							</blockquote>
+							
 							<ul class="list-inline list-social">
 								<li><a href="mailto:calissecalissecalisse@gmail.com" class="btn btn-link"><i class="fa fa-envelope"></i></a></li>
 								<li><a href="https://calisse.bandcamp.com/" class="btn btn-link"><i class="icon-bandcamp"></i></a></li>
@@ -54,6 +108,9 @@
 			
 			</div>
 		</section>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	</body>
 </html>
